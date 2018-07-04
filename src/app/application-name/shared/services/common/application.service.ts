@@ -1,5 +1,4 @@
 
-
 import { Observable } from "rxjs";
 import { Injectable, Type } from "@angular/core";
 import { USER_SESSION, StorageService } from "app/osiris-externals/osiris-commons/services/utils/storage.service";
