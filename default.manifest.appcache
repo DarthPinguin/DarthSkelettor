@@ -1,0 +1,9 @@
+CACHE MANIFEST
+# version xxx
+styles.css
+runtime.js
+polyfills.js
+main.js
+
+NETWORK:
+*

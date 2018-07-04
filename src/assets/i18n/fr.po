@@ -1,0 +1,213 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "OSIRIS.ORGANIZATION.CITIZEN"
+msgstr "Création d'un compte citoyen"
+
+msgid "OSIRIS.ORGANIZATION.IMP"
+msgstr "Impétrant"
+
+msgid "OSIRIS.ORGANIZATION.WS_MANAGER_TITLE"
+msgstr "Responssables chantier"
+
+msgid "ok"
+msgstr ""
+
+msgid "Non"
+msgstr ""
+
+msgid "Oui"
+msgstr ""
+
+msgid "notAuthenticate"
+msgstr ""
+
+msgid "MODULE_USER_RIGTHS_GUARD"
+msgstr ""
+
+msgid "OSIRIS.COMMONS.INTERNAL_ERROR"
+msgstr "Une erreur technique s'est produite, veuillez contacter votre administrateur"
+
+msgid "OSIRIS.COMMONS.HTTP_ERROR"
+msgstr "Erreur - "
+
+msgid "OSIRIS.COMMONS.ACCESS_DENIED"
+msgstr "Accès refusé"
+
+msgid "OSIRIS.COMMONS.NOT_FOUND"
+msgstr "Ressource non disponible, veuillez contacter votre administrateur"
+
+msgid "OSIRIS.COMMONS.MISSING_TRANSACTION_ID"
+msgstr "Une erreur technique s'est produite, veuillez contacter votre administrateur"
+
+msgid "OSIRIS.COMMONS.INVALID_DATA"
+msgstr ""
+"Les données envoyées sont incorrectes, veuillez contacter votre "
+"administrateur"
+
+msgid "OSIRIS.COMMONS.MISSING_DATA"
+msgstr ""
+"Les données envoyées sont incomplètes, veuillez contacter votre "
+"administrateur"
+
+msgid "OSIRIS.COMMONS.TRANSACTION_ID_ALREADY_EXIST"
+msgstr "Une erreur technique s'est produite, veuillez contacter votre administrateur"
+
+msgid "OSIRIS.COMMONS.DUPLICATED_DATA"
+msgstr "Les données envoyées existent déjà, veuillez rectifier vos données"
+
+msgid "OSIRIS.COMMONS.SAVE"
+msgstr "Sauvegarde"
+
+msgid "OSIRIS.ODM1.COMPL_REQUEST.RESPONSE_SUCCESS_NOTIF_TITLE"
+msgstr "Opération effectuée"
+
+msgid "returnLastPage"
+msgstr "Retour à la page précédente"
+
+msgid "OSIRIS.ORANIZATION.SHARED.USER"
+msgstr "Utilisateurs"
+
+msgid "OSIRIS.ORANIZATION.SHARED.MANAGER"
+msgstr "Responssables chantier"
+
+msgid "ORG.CITIZEN.FORM.FIRSTNAME_FIELD"
+msgstr "Nom"
+
+msgid "ORG.CITIZEN.FORM.LASTNAME_FIELD"
+msgstr "Prénom"
+
+msgid "ORG.CITIZEN.FORM.LANG_CODE_FIELD"
+msgstr "Langue"
+
+msgid "ORG.CITIZEN.FORM.TYPES_FIELD"
+msgstr "Type"
+
+msgid "ORG.CITIZEN.FORM.MOBILE_FIELD"
+msgstr "Mobile"
+
+msgid "ORG.CITIZEN.FORM.SSIN_UNVALID"
+msgstr "Numéro de registre national invalide"
+
+msgid "ORG.CITIZEN.FORM.SSIN_FIELD"
+msgstr "Numéro de registre national"
+
+msgid "ORG.CITIZEN.FORM.EMAIL_FIELD"
+msgstr "Email"
+
+msgid "ORG.CITIZEN.FORM.PASSWORD_FIELD"
+msgstr "Mot de passe"
+
+msgid "ORG.CITIZEN.FORM.PASSWORD_CHECK_FIELD"
+msgstr "Confimer le mot de passe"
+
+msgid "captcha-placeholder"
+msgstr ""
+
+msgid "OSIRIS.COMMONS.PREVIOUS"
+msgstr "Précédent"
+
+msgid "OSIRIS.COMMONS.FROM_HOUR"
+msgstr "de"
+
+msgid "OSIRIS.COMMONS.TO_HOUR"
+msgstr "à"
+
+msgid "OSIRIS.NEW_DEMAND_VALIDATION_INVALIDE_MSG_HOUR"
+msgstr "L'heure de début ne peut être supérieure à l'heure de fin !"
+
+msgid "null.OSIRIS.COMMONS.FROM_HOUR"
+msgstr ""
+
+msgid "fr"
+msgstr ""
+
+msgid "ERROR_MESSAGE.EQUAL_TO"
+msgstr "Ce champ doit être le même que le champs {{field}}"
+
+msgid "ERROR_MESSAGE.REQUIRED"
+msgstr "Ce champ est obligatoire"
+
+msgid "OSIRIS.COMMONS.SELECT_FILE"
+msgstr "Selectionner un fichier"
+
+msgid "OSIRIS.COMMONS.PDF_ERROR"
+msgstr ""
+
+msgid "ERROR_MESSAGE.MAXLENGTH"
+msgstr ""
+
+msgid "OSIRIS.ODM1.MODALS.LIBRARY_DOCUMENT_TITLE_1"
+msgstr ""
+
+msgid "OSIRIS.ODM1.MODALS.LIBRARY_DOCUMENT_SEARCH"
+msgstr ""
+
+msgid "versionLabel"
+msgstr "Version : {{value}}"
+
+msgid "News"
+msgstr "News"
+
+msgid "templateMessageURL"
+msgstr "Ma configuration messages"
+
+msgid "libraryDocLink"
+msgstr "Librairie de documents"
+
+msgid "WS_MANAGER_BOARD_LINK"
+msgstr "Responssable chantier"
+
+msgid "Se déconnecter"
+msgstr "Se déconnecter"
+
+msgid "OSIRIS.ODM1.HEADER.AVAILABLE_ACTIONS"
+msgstr "Actions disponibles sur la page"
+
+msgid "OSIRIS.ODM1.MODALS.NEWS_TITLE"
+msgstr ""
+
+msgid "NEWS.DOWNLOAD_LINK"
+msgstr ""
+
+msgid "OSIRIS.COMMON.MARK_AS_READ"
+msgstr ""
+
+msgid "WSM.BOARD.FIRST_NAME_HEADER"
+msgstr "Nom"
+
+msgid "WSM.BOARD.LAST_NAME_HEADER"
+msgstr "Prénom"
+
+msgid "WSM.BOARD.DELETE_HEADER"
+msgstr "Supprimer"
+
+msgid "WSM.BOARD.EDIT_HEADER"
+msgstr "Editer"
+
+msgid "OSIRIS.ODM1.MODALS.MANAGER_FIRST_NAME"
+msgstr "Nom"
+
+msgid "OSIRIS.ODM1.MODALS.MANAGER_LAST_NAME"
+msgstr "Prénom"
+
+msgid "OSIRIS.ODM1.MODALS.MANAGER_FIELD_LINGUISTIC_REGIME"
+msgstr "Rôle linguistique"
+
+msgid "OSIRIS.ODM1.MODALS.MANAGER_FIELD_TITLE"
+msgstr "Titre"
+
+msgid "OSIRIS.ODM1.MODALS.MANAGER_MOBILE"
+msgstr "Gsm"
+
+msgid "OSIRIS.ODM1.MODALS.MANAGER_PHONE"
+msgstr "Tél. Direct"
+
+msgid "OSIRIS.ODM1.MODALS.EMAIL"
+msgstr "Adresse e-mail"
+
+msgid "OSIRIS.ODM1.NEW_DEMAND.SEARCH_BY_NAME"
+msgstr ""

@@ -1,0 +1,31 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+      "tslint:recommended"
+  ],
+  "linterOptions": {
+      "exclude": [
+          "bin",
+          "/dist",
+          "/node_modules",
+          "/src/assets",
+          "/src/app/osiris-commons/swagger"
+      ]
+  },
+  "jsRules": {},
+  "rules": {
+    "ordered-imports": false,
+    "no-console":[false, "log", "error"],
+    "max-classes-per-file": false,
+    "object-literal-sort-keys": [false, "ignore-case", "match-declaration-order", "shorthand-first"],
+    "no-bitwise": false,
+    "radix": false,
+    "interface-name": false,
+    "ban-types": [true, ["Object", "Use {} instead."], ["String"], ["Number"]],
+    "max-line-length": [true, 180],
+    "no-namespace": false
+  },
+  "rulesDirectory": [
+    "./node_modules/codelyzer"
+  ]
+}

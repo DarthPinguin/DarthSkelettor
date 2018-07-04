@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+
+.auto-height-tm-content {
+  height: calc(100vh - 85px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.auto-height-tm-content .contained, .row.step-footer.contained {
+  margin: auto;
+}

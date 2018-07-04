@@ -1,0 +1,154 @@
+<!doctype html>
+
+<html lang="en" manifest="manifest.appcache">
+<head>
+  <meta charset="utf-8">
+  <title>Osiris</title>
+  <base href="/Organization/">
+
+  <!-- meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700" rel="stylesheet">
+
+  <!-- icons -->
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/icons/apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/icons/apple-touch-icon-120x120-precomposed.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/icons/apple-touch-icon-152x152-precomposed.png">
+  <link rel="apple-touch-icon" sizes="64x64" href="assets/icons/favicon.ico@4x.png">
+  <link rel="apple-touch-icon" sizes="48x48" href="assets/icons/favicon.ico@3x.png">
+  <link rel="apple-touch-icon" sizes="32x32" href="assets/icons/favicon.ico@2x.png">
+  <link rel="apple-touch-icon" sizes="24x24" href="assets/icons/favicon.ico@1,5x.png">
+</head>
+<body>
+  <style type="text/css">
+    .loading {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      display: none;
+      transition: opacity .5s;
+      pointer-events: none;
+    }
+
+    app-odm1:empty + .loading {
+      opacity: 1;
+      display: block;
+      z-index: 10000;
+    }
+
+    .loading .loading__bg {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      z-index: 0;
+      background: url("assets/images/osiris-bg.svg") no-repeat #1d618f;
+      background-size: cover;
+    }
+
+    .loading .loading__loader {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+
+    .loading .loading__logo {
+      padding: 32px;
+    }
+
+    .loading .loading__progress {
+    }
+
+    .loading .loading__fill {
+      display: block;
+      width: 200px;
+      height: 16px;
+      border: 1px solid #fff;
+      border-radius: 16px;
+      background-color: #f5ce0a;
+      background-image: linear-gradient( center bottom, #f5ce0a 37%, #ffe566 69% );
+      box-shadow: inset 0 2px 6px rgba(0,0,0,0.3);
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 100px;
+      animation: move 2s linear infinite;
+    }
+
+      .loading .loading__fill::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-image: linear-gradient( -45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent );
+        z-index: 1;
+        background-size: 50px 50px;
+        animation: move 2s linear infinite;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        overflow: hidden;
+      }
+
+    @keyframes move {
+      0% {
+        background-position: 0 0;
+      }
+
+      100% {
+        background-position: 50px 50px;
+      }
+    }
+  </style>
+   <!--[if IE]>
+    <style type="text/css">
+    .loading {
+      display: none;
+    }
+
+    app-main:empty + .loading {
+      display: block;
+    }
+    </style>
+    <![endif]-->
+
+  <app-root></app-root>
+  <div class="loading">
+    <div class="loading__bg"></div>
+    <div class="loading__loader">
+      <div class="loading__progress">
+        <img class="loading__logo" src="assets/images/osiris-logo.png" alt="osiris-logo">
+        <div class="loading__fill"></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    window.addEventListener('load', function (e) {
+      window.applicationCache.addEventListener('updateready', function (e) {
+            if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+                // Browser downloaded a new app cache.
+                window.applicationCache.update();
+                window.location.reload();
+            } else {
+                // Manifest didn't changed. Nothing new to server.
+            }
+        }, false);
+    }, false);
+  </script>
+</body>
+</html>
