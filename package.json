@@ -30,11 +30,14 @@
     "@ngx-loading-bar/router": "1.0.1",
     "@ngx-translate/core": "9.0.1",
     "@ngx-translate/http-loader": "2.0.0",
+    "bootstrap": "latest",
     "classlist.js": "^1.1.20150312",
     "core-js": "2.4.1",
     "font-awesome": "4.7.0",
     "gettext-parser": "1.3.1",
+    "hoek": "^5.0.3",
     "jquery": "3.2.1",
+    "latest": "^0.2.0",
     "lodash": "4.17.4",
     "ngx-cookie-service": "1.0.9",
     "ngx-translate-extract": "1.0.0",
@@ -42,8 +45,7 @@
     "rxjs-compat": "^6.0.0-rc.0",
     "url-search-params-polyfill": "3.0.0",
     "webpack": "4.8.3",
-    "zone.js": "0.8.26",
-    "bootstrap": "latest"
+    "zone.js": "0.8.26"
   },
   "devDependencies": {
     "@angular/cli": "^6.0.5",
