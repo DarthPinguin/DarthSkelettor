@@ -18,23 +18,15 @@
             "polyfills": "src/polyfills.ts",
             "assets": [
               "src/assets",
-              "src/favicon.ico",
-              "src/app/osiris-externals/osiris-commons/assets",
               "src/manifest.appcache",
               "src/web.config"
             ],
             "styles": [
-              "src/styles.css",
-              "src/app/osiris-externals/osiris-commons/assets/css/style.css",
-              "src/assets/styles/app-v0.4.min.css",
-              "node_modules/font-awesome/css/font-awesome.min.css",
-              "node_modules/primeng/resources/primeng.css",
-              "node_modules/primeng/resources/themes/omega/theme.css"
+              "src/styles.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/lodash/lodash.js",
-              "src/assets/libs/app.js"
+              "node_modules/lodash/lodash.js"
             ]
           },
           "configurations": {
@@ -123,22 +115,13 @@
             "tsConfig": "src/tsconfig.spec.json",
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/lodash/lodash.js",
-              "src/assets/libs/app.js"
+              "node_modules/lodash/lodash.js"
             ],
             "styles": [
-              "src/app/osiris-externals/osiris-commons/assets/css/style.css",
-              "src/assets/styles/app-v0.4.min.css",
-              "node_modules/font-awesome/css/font-awesome.min.css",
-              "node_modules/primeng/resources/primeng.css",
-              "node_modules/primeng/resources/themes/omega/theme.css"
+
             ],
             "assets": [
-              "src/assets",
-              "src/favicon.ico",
-              "src/app/osiris-externals/osiris-commons/assets",
-              "src/manifest.appcache",
-              "src/web.config"
+              "src/assets"
             ]
           }
         },
