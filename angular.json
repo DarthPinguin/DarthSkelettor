@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "osiris.organization.ui": {
+    "darth.skelettor.ui": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -86,24 +86,24 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "osiris.organization.ui:build"
+            "browserTarget": "darth.skelettor.ui:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "osiris.organization.ui:build:production"
+              "browserTarget": "darth.skelettor.ui:build:production"
             },
             "int": {
-              "browserTarget": "osiris.organization.ui:build:int"
+              "browserTarget": "darth.skelettor.ui:build:int"
             },
             "sta": {
-              "browserTarget": "osiris.organization.ui:build:sta"
+              "browserTarget": "darth.skelettor.ui:build:sta"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "osiris.organization.ui:build"
+            "browserTarget": "darth.skelettor.ui:build"
           }
         },
         "test": {
@@ -139,7 +139,7 @@
         }
       }
     },
-    "osiris.organization.ui-e2e": {
+    "darth.skelettor.ui-e2e": {
       "root": "",
       "sourceRoot": "",
       "projectType": "application",
@@ -148,7 +148,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "osiris.organization.ui:serve"
+            "devServerTarget": "darth.skelettor.ui:serve"
           }
         },
         "lint": {
@@ -165,7 +165,7 @@
       }
     }
   },
-  "defaultProject": "osiris.organization.ui",
+  "defaultProject": "darth.skelettor.ui",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",

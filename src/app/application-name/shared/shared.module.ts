@@ -1,7 +1,5 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { OsirisCommonsModule } from "../../osiris-externals/osiris-commons/osiris-commons.module";
-import { DEFAULT_CONFIGURATION } from "app/osiris-externals/osiris-commons/config/default-config";
 
 const SHARED_MODULE_SERVICES: any[] = [
   // SERVICE
@@ -22,9 +20,6 @@ const SHARED_MODULE_INJECTED_COMPONENT: any[] = [
 const SHARED_MODULE_IMPORTS: any[] = [
   // Angular
   CommonModule,
-
-  // Osiris Common
-  OsirisCommonsModule.forRoot({ servicesConfig: DEFAULT_CONFIGURATION}),
 ];
 
 const SHARED_MODULE_COMPONENTS: any[] = [

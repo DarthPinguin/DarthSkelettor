@@ -7,8 +7,6 @@ import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 import { RouterModule } from "@angular/router";
 import { NgModule } from "@angular/core";
 
-// OSIRIS's modules
-
 // COMPONENTS
 
 // SERVICES

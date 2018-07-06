@@ -1,6 +1,6 @@
 import { AppPage } from "./app.po";
 
-describe("osiris.organization.ui App", () => {
+describe("darth.skelettor.ui App", () => {
   let page: AppPage;
 
   beforeEach(() => {
