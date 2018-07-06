@@ -10,14 +10,14 @@ export const ROUTES: Routes = [
     path: "",
     component: ApplicationNameComponent,
     children: [
-      {
-        path: ConstantsRouting.LOGIN,
-        loadChildren: "app/application-name/dashboard/dashboard.module#DashboardModule",
-      },
-      {
-        path: ConstantsRouting.HOME,
-        loadChildren: "app/application-name/board/board.module#BoardModule",
-      },
+      // {
+      //   path: ConstantsRouting.LOGIN,
+      //   loadChildren: "app/application-name/dashboard/dashboard.module#DashboardModule",
+      // },
+      // {
+      //   path: ConstantsRouting.HOME,
+      //   loadChildren: "app/application-name/board/board.module#BoardModule",
+      // },
     ],
   },
 ];

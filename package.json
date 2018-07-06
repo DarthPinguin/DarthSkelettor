@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "node ./banner.js & ng lint & ng serve --port=4200 --base-href=/DarthSkelettor/",
+    "start": "node ./banner.js & ng lint & ng serve --port=4300 --base-href=/DarthSkelettor/",
     "build": "node ./banner.js & ng build --prod --aot --source-map=false --base-href /DarthSkelettor/",
     "build-int": "node ./banner.js & ng build --aot --configuration=int --source-map=false --base-href /DarthSkelettor/ --output-hashing=none",
     "build-sta": "node ./banner.js & ng build --aot --configuration=sta --source-map=false --base-href /DarthSkelettor/ --output-hashing=none",
@@ -42,6 +42,7 @@
     "url-search-params-polyfill": "4.0.0",
     "webpack": "4.15.0",
     "zone.js": "0.8.26",
+    "rxjs-compat": "6.2.1",
     "bootstrap": "latest"
   },
   "devDependencies": {

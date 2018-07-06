@@ -1,9 +1,11 @@
 
 import { Observable } from "rxjs";
 import { Injectable, Type } from "@angular/core";
-import { USER_SESSION, StorageService } from "app/osiris-externals/osiris-commons/services/utils/storage.service";
-import { OsirisLanguageService } from "app/osiris-externals/osiris-commons/services/utils/language.service";
-import { User } from "app/osiris-externals/osiris-commons/models/view/User";
+
+import { User } from "app/application-name/shared/models/view_models/user.model";
+import { MyLanguageService } from "app/application-name/shared/services/utils/my-language.service";
+import { SessionStorageService, USER_SESSION } from "../utils/session-storage.service";
+import { UserWebService } from "app/application-name/shared/services/api/user-web.service";
 
 export abstract class ApplicationService {
       public readonly user: User;
@@ -19,23 +21,24 @@ export abstract class ApplicationService {
 }
 
 @Injectable({providedIn: "root"})
-export class CommonApplicationService implements ApplicationService {
+export class SharedApplicationService implements ApplicationService {
 
   public get user(): User {
       return this.storageService.get(USER_SESSION);
   }
+
   public get currentLang() {
-      return this.osiLangService.currentLang;
+      return this.myLanguageService.currentLang;
   }
 
   public get currentLanguage$() {
-    return this.osiLangService.currentLanguage$;
+    return this.myLanguageService.currentLanguage$;
   }
 
   constructor(
-      protected osiLangService: OsirisLanguageService,
-      protected usersWebService: UserService,
-      protected storageService: StorageService,
+      protected myLanguageService: MyLanguageService,
+      protected usersWebService: UserWebService,
+      protected storageService: SessionStorageService,
       // protected uiService: UIService,
   ) { /* constructor */ }
 
@@ -44,11 +47,11 @@ export class CommonApplicationService implements ApplicationService {
   }
 
   public switchLang() {
-    this.osiLangService.use(this.osiLangService.currentLang === "fr" ? "fr" : "nl");
+    this.myLanguageService.use(this.myLanguageService.currentLang === "fr" ? "fr" : "nl");
   }
 
   public useSessionLang() {
-    this.osiLangService.useLocalLang();
+    this.myLanguageService.useLocalLang();
   }
 
 //  public initUiService(alertComponent: AlertDialogComponent, confirmComponent: ConfirmDialogComponent): void {
@@ -76,10 +79,10 @@ export class CommonApplicationService implements ApplicationService {
 //  }
 
  public instant(key: string | string[], interpolateParams?: {}): any {
-   return this.osiLangService.instant(key, interpolateParams);
+   return this.myLanguageService.instant(key, interpolateParams);
  }
 
  public get(key: string | string[], interpolateParams?: {}): Observable<any> {
-   return this.osiLangService.get(key, Object);
+   return this.myLanguageService.get(key, Object);
  }
 }

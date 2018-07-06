@@ -18,7 +18,6 @@ import { AppComponent } from "./app.component";
 import { ApplicationNameModule } from "./application-name/application-name.module";
 
 import { SharedModule } from "./application-name/shared/shared.module";
-import { ORGANIZATION_SERVICES_CONFIGURATION } from "../environments/configs/configuration";
 
 import { SmallWorksiteRoutingModule } from "./application-name/application-name-application.module";
 import { TranslatePoHttpLoader } from "app/application-name/shared/services/common/ngx-translate-po-http-loader";

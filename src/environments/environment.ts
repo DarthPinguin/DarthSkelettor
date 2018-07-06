@@ -5,11 +5,10 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  common: commonEnvironment,
   production: false,
-  version: commonEnvironment.version,
-  clientId: commonEnvironment.clientId,
-  clientSecret: commonEnvironment.clientSecret,
+  version: "0.0",
+  clientId: "clientId",
+  clientSecret: "clientSecret",
   BackToHomePath: "/",
-
+  UserServiceBasePath: "api/fake/userApi/",
 };

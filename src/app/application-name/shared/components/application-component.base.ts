@@ -1,6 +1,6 @@
 import { OnInit, HostBinding } from "@angular/core";
 import { Subject } from "rxjs";
-import { ApplicationService } from "app/application-name/shared/services/common/application.service";
+import { SharedApplicationService } from "app/application-name/shared/services/common/application.service";
 
 export class ApplicationComponentBase implements OnInit {
 
@@ -23,8 +23,9 @@ export class ApplicationComponentBase implements OnInit {
   @HostBinding("class") private bodyClasses = "";
   private commonBodyClasses = ["common-page"]; // no common-page class for now
 
-  constructor(public applicationService: ApplicationService) {
-      this.applicationService.useSessionLang();
+  constructor(public applicationService: SharedApplicationService) {
+    debugger;
+    this.applicationService.useSessionLang();
   }
 
   public ngOnInit(): void {

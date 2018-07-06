@@ -3,7 +3,7 @@ import {
     AfterViewInit,
     Component,
 } from "@angular/core";
-import { ApplicationService } from "./shared/services/common/application.service";
+import { SharedApplicationService } from "./shared/services/common/application.service";
 import { ApplicationComponentBase } from "./shared/components/application-component.base";
 
 @Component({
@@ -12,7 +12,7 @@ import { ApplicationComponentBase } from "./shared/components/application-compon
 })
 export class ApplicationNameComponent extends ApplicationComponentBase implements AfterViewInit {
 
-  constructor(public appService: ApplicationService) {
+  constructor(public appService: SharedApplicationService) {
     super(appService);
     // set default
   }
