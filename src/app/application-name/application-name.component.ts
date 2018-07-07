@@ -14,7 +14,6 @@ export class ApplicationNameComponent extends ApplicationComponentBase implement
 
   constructor(public appService: SharedApplicationService) {
     super(appService);
-    debugger;
     // set default
   }
 

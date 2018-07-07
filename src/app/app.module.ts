@@ -13,7 +13,7 @@ import { NgModule } from "@angular/core";
 
 import { ROUTES } from "./app.routes";
 
-import { ROUTES as  SMALL_WORKSITE_ROUTES } from "./application-name/application-name-application.module";
+import { ROUTES as  APPLICATION_NAME_ROUTES } from "./application-name/application-name-application.module";
 import { AppComponent } from "./app.component";
 import { ApplicationNameModule } from "./application-name/application-name.module";
 
@@ -47,7 +47,7 @@ export const IMPORTS: any[] = [
   ApplicationNameModule,
   ApplicationNameRoutingModule,
 
-   RouterModule.forRoot([...SMALL_WORKSITE_ROUTES, ...ROUTES], { useHash: true }),
+   RouterModule.forRoot([...APPLICATION_NAME_ROUTES, ...ROUTES], { useHash: true }),
   // , enableTracing: true   for route debugging
 ];
 

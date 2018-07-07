@@ -12,7 +12,7 @@ export const ROUTES: Routes = [
     children: [
       // {
       //   path: ConstantsRouting.LOGIN,
-      //   loadChildren: "app/application-name/dashboard/dashboard.module#DashboardModule",
+      //   loadChildren: "app/application-name/login/login.module#LoginModule",
       // },
       // {
       //   path: ConstantsRouting.HOME,
