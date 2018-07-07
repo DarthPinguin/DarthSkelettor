@@ -26,4 +26,4 @@ export const ROUTES: Routes = [
   imports: [RouterModule.forRoot(ROUTES)],
   exports: [RouterModule],
 })
-export class SmallWorksiteRoutingModule { }
+export class ApplicationNameRoutingModule { }

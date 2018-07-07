@@ -21,7 +21,7 @@ import { HttpClientModule } from "@angular/common/http";
 // COMPONENTS
 import { ApplicationNameComponent } from "./application-name.component";
 
-import { SmallWorksiteRoutingModule } from "./application-name-application.module";
+import { ApplicationNameRoutingModule } from "./application-name-application.module";
 import { SharedModule } from "app/application-name/shared/shared.module";
 
 // ISSUE CLI https://github.com/angular/angular/issues/21809
@@ -51,7 +51,7 @@ const APPLICATION_NAME_IMPORTS: any[] = [
   // Angular modules
   CommonModule,
   FormsModule, ReactiveFormsModule,
-  SmallWorksiteRoutingModule,
+  ApplicationNameRoutingModule,
   RouterModule,
   HttpClientModule,
 

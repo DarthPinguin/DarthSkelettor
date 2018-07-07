@@ -24,7 +24,6 @@ export class ApplicationComponentBase implements OnInit {
   private commonBodyClasses = ["common-page"]; // no common-page class for now
 
   constructor(public applicationService: SharedApplicationService) {
-    debugger;
     this.applicationService.useSessionLang();
   }
 

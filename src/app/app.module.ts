@@ -19,7 +19,7 @@ import { ApplicationNameModule } from "./application-name/application-name.modul
 
 import { SharedModule } from "./application-name/shared/shared.module";
 
-import { SmallWorksiteRoutingModule } from "./application-name/application-name-application.module";
+import { ApplicationNameRoutingModule } from "./application-name/application-name-application.module";
 import { TranslatePoHttpLoader } from "app/application-name/shared/services/common/ngx-translate-po-http-loader";
 
 // AoT requires an exported function for factories
@@ -45,7 +45,7 @@ export const IMPORTS: any[] = [
 
   SharedModule,
   ApplicationNameModule,
-  SmallWorksiteRoutingModule,
+  ApplicationNameRoutingModule,
 
    RouterModule.forRoot([...SMALL_WORKSITE_ROUTES, ...ROUTES], { useHash: true }),
   // , enableTracing: true   for route debugging
